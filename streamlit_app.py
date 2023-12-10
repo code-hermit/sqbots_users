@@ -113,8 +113,9 @@ def get_users_df(start_date=START_DATE,end_date=END_DATE):
 
 # bar_plot_df(df,var_name,value_name)
 # line_plot_df(data,var_name,value_name,title)
-start_date = np.datetime64(st.date_input("Start Date", START_DATE))
-end_date = np.datetime64(st.date_input("End Date", END_DATE))
+date_col1,date_col2=st.columns(2)
+start_date = np.datetime64(date_col1.date_input("Start Date", START_DATE))
+end_date = np.datetime64(date_col2.date_input("End Date", END_DATE))
 
 u_df=get_users_df(start_date=start_date,end_date=end_date)
 
