@@ -1,7 +1,6 @@
 from json_loader import json_load
 import pandas as pd
 from datetime import datetime
-from matplotlib import pyplot as plt
 import plotchart
 import streamlit as st
 import numpy as np
